@@ -9,7 +9,7 @@
   --border-transition-base: border-color .4s cubic-bezier(.645,.045,.355,1);
   --color-transition-base: color .4s cubic-bezier(.645,.045,.355,1);
 
-  /* Colors tin
+  /* Colors drak
   -------------------------- */
   --color-primary: #20a0ff;
   --color-success: #13ce66;
@@ -20,13 +20,13 @@
   --color-blue-light: #5da9ff;
   --color-blue-lighter: rgba(var(--color-blue), 0.12);
 
-  /* Colors drak
+  /* Colors tin
   -------------------------- */
   --color-drak-primary: #108ee9;
   --color-drak-success: #13ce66;
   --color-drak-warning: #f7ba2a;
   --color-drak-danger: #ff4949;
-  --color-drak-info: #50bfff;
+  --color-drak-info: #a8dfff;
   --color-drak-blue: #2e90fe;
   --color-drak-blue-light: #5da9ff;
   --color-drak-blue-lighter: rgba(var(--color-blue), 0.12);
@@ -149,7 +149,7 @@
 
   /* Select
   -------------------------- */
-  --select-border-color-hover: var(--border-color-hover);
+  --select-border-color-hover: var(--color-primary);
   --select-disabled-border: var(--disabled-border-base);
   --select-font-size: var(--font-size-base);
   --select-close-hover-color: #99a9bf;
@@ -159,16 +159,16 @@
   --select-input-focus-background: var(--color-primary);
   --select-input-font-size: 12px;
 
-  --select-tag-height: 24px;
-  --select-tag-color: var(--color-white);
-  --select-tag-background: var(--color-primary);
+  --select-tag-height: 20px;
+  --select-tag-color: var(--font-color-base);
+  --select-tag-background: var(--background-color-base);
 
-  --select-option-color: var(--link-color);
+  --select-option-color: var(--font-color-base);
   --select-option-disabled-color: var(--color-grey);
-  --select-option-height: 36px;
-  --select-option-hover-background: #e5e9f2;
-  --select-option-selected: var(--color-primary);
-  --select-option-selected-hover: #1D8CE0;
+  --select-option-height: 30px;
+  --select-option-hover-background: var(--background-color-base);
+  --select-option-selected: var(--color-grey);
+  --select-option-selected-hover: var(--color-grey);
 
   --select-group-color: #999;
   --select-group-height: 30px;
@@ -177,8 +177,8 @@
   --select-dropdown-background: var(--color-white);
   --select-dropdown-shadow: var(--box-shadow-base);
   --select-dropdown-empty-color: #999;
-  --select-dropdown-max-height: 274px;
-  --select-dropdown-padding: 6px 0;
+  --select-dropdown-max-height: 174px;
+  --select-dropdown-padding: 0;
   --select-dropdown-empty-padding: 10px 0;
   --select-dropdown-border: solid 1px var(--disabled-border-base);
 
@@ -251,7 +251,7 @@
   --input-font-size: var(--font-size-base);
   --input-color: var(--font-color-base);
   --input-width: 140px;
-  --input-height: 36px;
+  --input-height: 28px;
   --input-shadow-hover: var(--shadow-base);
   --input-border: var(--border-base);
   --input-border-color: var(--border-color-base);
@@ -274,14 +274,14 @@
   --input-disabled-color: var(--disabled-color-base);
   --input-disabled-placeholder-color: var(--color-grey);
 
-  --input-large-font-size: 16px;
-  --input-large-height: 42px;
+  --input-large-font-size: 13px;
+  --input-large-height: 32px;
 
   --input-small-font-size: 13px;
-  --input-small-height: 30px;
+  --input-small-height: 26px;
 
   --input-mini-font-size: 12px;
-  --input-mini-height: 22px;
+  --input-mini-height: 24px;
 
   /* Cascader
   -------------------------- */
@@ -391,8 +391,8 @@
  -------------------------- */
   --switch-on-color: var(--color-primary);
   --switch-off-color: var(--color-grey);
-  --switch-disabled-color: #E5E9F3;
-  --switch-disabled-text-color: #F9FAFC;
+  --switch-disabled-color: #f4f4f4;
+  --switch-disabled-text-color: var(--color-grey);
 
   --switch-font-size: var(--font-size-base);
   --switch-core-border-radius: 12px;
@@ -417,17 +417,17 @@
  -------------------------- */
   --table-border-color: #e0e6ed;
   --table-text-color: #1f2d3d;
-  --table-header-background: #EFF2F7;
+  --table-header-background: var(--background-color-base);
 
   /* Pagination
  -------------------------- */
-  --pagination-font-size: 13px;
+  --pagination-font-size: 12px;
   --pagination-fill: var(--color-white);
-  --pagination-color: var(--link-color);
+  --pagination-color: var(--font-color-base);
   --pagination-border-radius: 2px;
-  --pagination-button-color: #99a9bf;
-  --pagination-button-size: 28px;
-  --pagination-button-disabled-color: #e4e4e4;
+  --pagination-button-color: var(--font-color-base);
+  --pagination-button-size: 26px;
+  --pagination-button-disabled-color: var(--color-grey);
   --pagination-button-disabled-fill: var(--color-white);
   --pagination-border-color: var(--disabled-border-base);
   --pagination-hover-fill: var(--color-primary);
@@ -455,31 +455,31 @@
   /* Tag
   -------------------------- */
   --tag-padding: 0 5px;
-  --tag-fill: var(--border-color-hover);
-  --tag-color: var(--color-white);
+  --tag-fill: #f4f4f4;
+  --tag-color: var(--font-color-base);
   --tag-close-color: #666;
   --tag-font-size: 12px;
   --tag-border-radius: 4px;
 
-  --tag-gray-fill: #e5e9f2;
-  --tag-gray-border: #e5e9f2;
-  --tag-gray-color: var(--link-color);
+  --tag-gray-fill: var(--color-grey);
+  --tag-gray-border:  var(--color-grey);
+  --tag-gray-color: var(--color-white);
 
-  --tag-primary-fill: rgba(32,159,255,0.10);
-  --tag-primary-border: rgba(32,159,255,0.20);
-  --tag-primary-color: var(--color-primary);
+  --tag-primary-fill: var(--color-primary);
+  --tag-primary-border: var(--color-primary);
+  --tag-primary-color: var(--color-white);
 
-  --tag-success-fill: rgba(18,206,102,0.10);
-  --tag-success-border: rgba(18,206,102,0.20);
-  --tag-success-color: var(--color-success);
+  --tag-success-fill: var(--color-success);
+  --tag-success-border: var(--color-success);
+  --tag-success-color: var(--color-white);
 
-  --tag-warning-fill: rgba(247,186,41,0.10);
-  --tag-warning-border: rgba(247,186,41,0.20);
-  --tag-warning-color: var(--color-warning);
+  --tag-warning-fill: var(--color-warning);
+  --tag-warning-border: var(--color-warning);
+  --tag-warning-color: var(--color-white);
 
-  --tag-danger-fill: rgba(255,73,73,0.10);
-  --tag-danger-border: rgba(255,73,73,0.20);
-  --tag-danger-color: var(--color-danger);
+  --tag-danger-fill: var(--color-danger);
+  --tag-danger-border: var(--color-danger);
+  --tag-danger-color: var(--color-white);
 
   /* Dropdown
   -------------------------- */
@@ -489,7 +489,7 @@
 
   /* Badge
   -------------------------- */
-  --badge-fill: var(--color-danger);
+  --badge-fill: var(--color-warning);
   --badge-radius: 10px;
   --badge-font-size: 12px;
   --badge-padding: 6px;
@@ -504,7 +504,7 @@
   /* Slider
   --------------------------*/
   --slider-main-background-color: var(--color-primary);
-  --slider-runway-background-color: #e5e9f2;
+  --slider-runway-background-color: var(--background-color-base);
   --slider-button-hover-color: #1d8ce0;
   --slider-stop-background-color: var(--color-grey);
   --slider-disable-color: var(--color-grey);
@@ -544,7 +544,7 @@
 
   /* DatePicker
   --------------------------*/
-  --datepicker-color: var(--link-color);
+  --datepicker-color: var(--font-color-base);
   --datepicker-off-color: #ddd;
   --datepicker-header-color: var(--border-color-hover);
   --datepicker-icon-color: #99a9bf;

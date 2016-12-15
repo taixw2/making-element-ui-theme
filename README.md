@@ -6,8 +6,8 @@
  - Enter your local directory, and install dependencies:
 
 ``` bash
-git clone ***
-cd *** & npm install
+git clone git@github.com:taixw2/make-element-ui-theme.git et
+cd et && npm install
 et --init
 ```
 
@@ -28,9 +28,8 @@ npm run build
 
 ## tips
 > et工具如果不想安装在全局环境下，需要通过 `node_modules/.bin/et` 访问该命令
-> 需要你的计算机支持shell命令
-```
 
+例如
+``` bash
 sh node_modules/.bin/et --init
-
 ```

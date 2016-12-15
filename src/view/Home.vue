@@ -2,27 +2,50 @@
 
     <div class="wrp">
       <el-row :gutter="20">
-        <el-col :span="4">
+        <el-col :span="4" class="_col">
           <router-link to="button">按钮 Button</router-link>
         </el-col>
 
-        <el-col :span="4">
+        <el-col :span="4" class="_col">
           <router-link to="radio">单选/多选 Radio/Checkbox</router-link>
         </el-col>
 
-        <el-col :span="4">
+        <el-col :span="4" class="_col">
           <router-link to="input">输入框/计数器 Input/InputNumber</router-link>
         </el-col>
 
-        <el-col :span="4">
+        <el-col :span="4" class="_col">
           <router-link to="select">选择器 Select</router-link>
         </el-col>
 
+        <el-col :span="4" class="_col">
+          <router-link to="switch">开关/滑块 Switch/Slider</router-link>
+        </el-col>
 
+        <el-col :span="4" class="_col">
+          <router-link to="datepicker">日期选择器 DatePicker</router-link>
+        </el-col>
+
+        <el-col :span="4" class="_col">
+          <router-link to="table">表格 Table</router-link>
+        </el-col>
+
+        <el-col :span="4" class="_col">
+          <router-link to="tag">标签 Tag</router-link>
+        </el-col>
+
+        <el-col :span="4" class="_col">
+          <router-link to="pagination">Pagination 分页</router-link>
+        </el-col>
+
+        <el-col :span="4" class="_col">
+          <router-link to="badge">Badge 红点</router-link>
+        </el-col>
 
       </el-row>
-
-      <router-view></router-view>
+      <div class="_view">
+        <router-view></router-view>
+      </div>
     </div>
 
 </template>
@@ -37,14 +60,20 @@
   width: 800px;
   margin:auto;
   /*height:80%;*/
-  background-color: #fafafa;
+  background-color: #fff;
   border: 1px solid #efefef;
   padding: 30px 20px;
   box-sizing: border-box;
 }
+._view{
+  padding-top: 20px;
+}
 h3{
   font-weight: normal;
   font-size: 22px;
+}
+._col{
+  margin-bottom: 10px;
 }
 .desc{
   color:#666;
