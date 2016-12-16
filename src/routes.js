@@ -36,7 +36,6 @@ module.exports = [
                 name: "DatePicker",
                 component: r("DatePicker")
             },
-
             {
                 path: "table",
                 name: "Table",
@@ -57,6 +56,28 @@ module.exports = [
                 name: "Badge",
                 component: r("Badge")
             },
+            {
+                path: "alert",
+                name: "Alert",
+                component: r("Alert")
+            },
+            {
+                path: "loading",
+                name: "Loading",
+                component: r("Loading")
+            },
+            {
+                path: "message",
+                name: "Message",
+                component: r("Message")
+            },
+
+            {
+                path: "messagebox",
+                name: "MessageBox",
+                component: r("MessageBox")
+            },
+
 
         ]
     }

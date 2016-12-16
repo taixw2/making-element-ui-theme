@@ -35,12 +35,26 @@
         </el-col>
 
         <el-col :span="4" class="_col">
-          <router-link to="pagination">Pagination 分页</router-link>
+          <router-link to="pagination">分页 Pagination</router-link>
         </el-col>
 
         <el-col :span="4" class="_col">
-          <router-link to="badge">Badge 红点</router-link>
+          <router-link to="badge">红点 Badge</router-link>
         </el-col>
+        <el-col :span="4" class="_col">
+          <router-link to="alert">警告提示 Alert</router-link>
+        </el-col>
+        <el-col :span="4" class="_col">
+          <router-link to="loading">加载中 <br /> Loading</router-link>
+        </el-col>
+
+        <el-col :span="4" class="_col">
+          <router-link to="message">消息提示 Message</router-link>
+        </el-col>
+        <el-col :span="4" class="_col">
+          <router-link to="messagebox">弹框 MessageBox</router-link>
+        </el-col>
+
 
       </el-row>
       <div class="_view">

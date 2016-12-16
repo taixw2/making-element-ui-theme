@@ -152,7 +152,7 @@
   --select-border-color-hover: var(--color-primary);
   --select-disabled-border: var(--disabled-border-base);
   --select-font-size: var(--font-size-base);
-  --select-close-hover-color: #99a9bf;
+  --select-close-hover-color: var(--color-grey);
 
   --select-input-color: var(--color-grey);
   --select-multiple-input-color: #666;
@@ -201,12 +201,14 @@
 
   /* Message Box
   -------------------------- */
-  --msgbox-width: 420px;
+  --msgbox-width: 380px;
   --msgbox-border-radius: 3px;
-  --msgbox-font-size: 16px;
-  --msgbox-content-font-size: 14px;
-  --msgbox-content-color: var(--link-color);
+  --msgbox-font-size: 14px;
+  --msgbox-content-font-size: 12px;
+  --msgbox-content-color: var(--font-color-base);
   --msgbox-error-font-size: 12px;
+  --msgbox-title-color : var(--font-color-base);
+  --msgbox-content-padding : 10px 20px 30px;
 
   --msgbox-success-color: var(--color-success);
   --msgbox-info-color: var(--color-info);
@@ -216,11 +218,13 @@
   /* Message
   -------------------------- */
   --message-shadow: var(--box-shadow-base);
-  --message-min-width: 300px;
-  --message-padding: 10px 12px;
+  --message-min-width: auto;
+  --message-padding: 5px;
+  --message-img-size: 30px;
+
   --message-content-color: var(--border-color-hover);
   --message-close-color: var(--color-grey);
-  --message-close-hover-color: #99A9BF;
+  --message-close-hover-color: var(--color-grey);
 
   --message-success-color: var(--color-success);
   --message-info-color: var(--color-info);
@@ -239,7 +243,7 @@
   --notification-title-color: #1f2d3d;
 
   --notification-close-color: var(--color-grey);
-  --notification-close-hover-color: #99A9BF;
+  --notification-close-hover-color: var(--color-grey);
 
   --notification-success-color: var(--color-success);
   --notification-info-color: var(--color-info);
@@ -261,7 +265,7 @@
   --input-fill-disabled: var(--disabled-fill-base);
   --input-color-disabled: var(--font-color-disabled-base);
   --input-icon-color: var(--color-grey);
-  --input-placeholder-color: #99a9bf;
+  --input-placeholder-color: var(--color-grey);
   --input-max-width: 314px;
 
   --input-hover-border: var(--border-color-hover);
@@ -547,7 +551,7 @@
   --datepicker-color: var(--font-color-base);
   --datepicker-off-color: #ddd;
   --datepicker-header-color: var(--border-color-hover);
-  --datepicker-icon-color: #99a9bf;
+  --datepicker-icon-color: var(--color-grey);
   --datepicker-border-color: var(--disabled-border-base);
   --datepicker-inner-border-color: #e4e4e4;
   --datepicker-cell-hover-color: #e5e9f2;
@@ -558,6 +562,6 @@
 
   /* Loading
   --------------------------*/
-  --loading-spinner-size: 42px;
+  --loading-spinner-size: 28px;
   --loading-fullscreen-spinner-size: 50px;
 }
