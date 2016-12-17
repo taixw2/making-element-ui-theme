@@ -77,6 +77,16 @@ module.exports = [
                 name: "MessageBox",
                 component: r("MessageBox")
             },
+            {
+                path: "notification",
+                name: "Notification",
+                component: r("Notification")
+            },
+            {
+                path: "navmenu",
+                name: "NavMenu",
+                component: r("NavMenu")
+            },
 
 
         ]

@@ -54,6 +54,12 @@
         <el-col :span="4" class="_col">
           <router-link to="messagebox">弹框 MessageBox</router-link>
         </el-col>
+        <el-col :span="4" class="_col">
+          <router-link to="notification">通知 MessageBox</router-link>
+        </el-col>
+        <el-col :span="4" class="_col">
+          <router-link to="navmenu">导航菜单 NavMenu</router-link>
+        </el-col>
 
 
       </el-row>

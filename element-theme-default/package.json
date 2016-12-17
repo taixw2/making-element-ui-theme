@@ -1,0 +1,91 @@
+{
+  "_args": [
+    [
+      "element-theme-default@^1.0.7",
+      "/home/mro/代码/make-element-ui-theme"
+    ]
+  ],
+  "_from": "element-theme-default@>=1.0.7 <2.0.0",
+  "_id": "element-theme-default@1.0.7",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/element-theme-default",
+  "_nodeVersion": "6.6.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/element-theme-default-1.0.7.tgz_1481700978238_0.8416986416559666"
+  },
+  "_npmUser": {
+    "email": "leopoldthecuber@gmail.com",
+    "name": "yi.yang"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "element-theme-default",
+    "raw": "element-theme-default@^1.0.7",
+    "rawSpec": "^1.0.7",
+    "scope": null,
+    "spec": ">=1.0.7 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/element-theme-default/-/element-theme-default-1.0.7.tgz",
+  "_shasum": "91456f346e4f67ef9ce41af3e8137c58e77af71b",
+  "_shrinkwrap": null,
+  "_spec": "element-theme-default@^1.0.7",
+  "_where": "/home/mro/代码/make-element-ui-theme",
+  "author": {
+    "email": "qingwei.li@ele.me",
+    "name": "haiping.zeng"
+  },
+  "bugs": {
+    "url": "https://github.com/ElementUI/theme-default/issues"
+  },
+  "dependencies": {
+    "vue-popup": "^0.2.9"
+  },
+  "description": "Element component default theme.",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-postcss": "^6.1.1",
+    "postcss-salad": "^1.0.5"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "91456f346e4f67ef9ce41af3e8137c58e77af71b",
+    "tarball": "https://registry.npmjs.org/element-theme-default/-/element-theme-default-1.0.7.tgz"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "homepage": "https://github.com/ElementUI/theme-default#readme",
+  "keywords": [
+    "element",
+    "theme"
+  ],
+  "license": "MIT",
+  "main": "lib/index.css",
+  "maintainers": [
+    {
+      "name": "qingwei.li",
+      "email": "cinwell.li@gmail.com"
+    }
+  ],
+  "name": "element-theme-default",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElementUI/theme-default.git"
+  },
+  "scripts": {
+    "build": "gulp build"
+  },
+  "style": "lib/index.css",
+  "version": "1.0.7"
+}

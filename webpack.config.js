@@ -68,6 +68,12 @@ if (process.env.NODE_ENV === 'production') {
             }
         })
     ])
+
+    et.watch({
+        config: './element-variables.css',
+        out: './theme'
+    })
+
 } else {
 
     et.watch({
