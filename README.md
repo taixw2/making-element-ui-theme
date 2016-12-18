@@ -2,6 +2,9 @@
 
 饿了么提供了许多优秀的组件，但是其组件的风格一直备受诟病，于是花了点时间对几乎所有组件的尺寸进行了缩小，以及对色彩线条阴影等进行了些许调整。
 
+样式可见 ：
+[https://taixw2.github.io/element-ui/index.html#/form](https://taixw2.github.io/element-ui/index.html#/form)
+
 ## Start
 
 ``` bash
@@ -16,7 +19,7 @@ cd et && npm install
 npm run dev
 
 # 这一步会使用webpack检测css的变动以及使用gulp输出编译后的css
-# 初次启动会提醒./theme/index.css没有找到，
+# 初次启动会提示 ./theme/index.css没有找到，
 # 等到 watch element theme 结束后再次刷新就OK了
 
 ```
