@@ -27,11 +27,10 @@ npm run dev
 ## Build
 
 ``` bash
-# build for production with minification
 npm run build
 
-#会在当前目录生成一个theme目录，直接引用该目录下的Index.css即可
-improt ./theme/index.css
+#会在dest目录生成一个theme目录，直接引用该目录下的index.css即可
+improt ./dist/theme/index.css
 
 ```
 
