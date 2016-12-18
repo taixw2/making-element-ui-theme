@@ -1,9 +1,25 @@
 # 更方便定制element-ui主题
 
-饿了么提供了许多优秀的组件，但是其组件的风格一直备受诟病，于是花了点时间对几乎所有组件的尺寸进行了缩小，以及对色彩线条阴影等进行了些许调整。
+饿了么提供了许多优秀的组件，但是其组件的风格一直备受诟病，
+于是基于element-ui提供的主题工具，`./element-theme` `element-theme-default`
+对几乎所有组件的尺寸进行了缩小，以及对色彩线条阴影等进行了些许调整。
+
 
 主题可见 ：
 [https://taixw2.github.io/element-ui/index.html#/form](https://taixw2.github.io/element-ui/index.html#/form)
+## 引入该主题
+
+#### 安装
+``` bash
+npm install element-thin-ui --save
+```
+#### 引入
+``` bash
+require("element-thin-ui/index.css");
+#或者
+import "element-thin-ui/index.css";
+```
+
 
 ## Start
 
