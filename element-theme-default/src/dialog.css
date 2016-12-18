@@ -39,7 +39,7 @@
     }
 
     @e header {
-      padding: 20px 20px 0;
+      padding: var(--dialog-header-padding);
     }
 
     @e close {
@@ -55,12 +55,12 @@
       line-height: 1;
       font-size: var(--dialog-title-font-size);
       font-weight: bold;
-      color: #1f2d3d;
+      color: var(--dialog-title-color);
     }
 
     @e body {
-      padding: 30px 20px;
-      color: #475669;
+      padding: var(--dialog-body-padding);
+      color: var(--dialog-body-color);
       font-size: var(--dialog-font-size);
     }
 

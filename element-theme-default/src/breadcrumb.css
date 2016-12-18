@@ -4,13 +4,13 @@
 @component-namespace el {
 
   @b breadcrumb {
-    font-size:13px;
+    font-size:var(--breadcrumd-item-size);
     line-height: 1;
     @utils-clearfix;
 
     @e separator {
       margin: 0 8px;
-      color: #c0ccda;
+      color: var(--breadcrumd-separator-color);
     }
     @e item {
       float: left;
@@ -18,7 +18,7 @@
       @e inner {
         &, & a {
           transition: color .15s linear;
-          color:#475669;
+          color:var(--breadcrumd-item-color);
 
           &:hover {
             color: var(--color-primary);
@@ -31,7 +31,8 @@
         .el-breadcrumb__item__inner,
         .el-breadcrumb__item__inner a {
           &, &:hover {
-            color: #99a9bf;
+            color:  var(--breadcrumd-last-color);
+            font-weight: var(--breadcrumd-last-weight);
             cursor: text;
           }
         }

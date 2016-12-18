@@ -6,7 +6,7 @@
     display: inline-block;
 
     @e header {
-      border-bottom: 1px solid #d3dce6;
+      border-bottom: 1px solid var(--tabs-border-color);
       padding: 0;
       position: relative;
       margin: 0 0 15px;
@@ -17,21 +17,21 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 3px;
-      background-color: var(--color-primary);
+      height: var(--tabs-bar-height);
+      background-color: var(--tabs-bar-fill);
       z-index: 1;
       transition: transform .3s cubic-bezier(.645,.045,.355,1);
       list-style: none;
     }
     @e item {
       padding: 0 16px;
-      height: 42px;
+      height: var(--tabs-item-height);
       box-sizing: border-box;
       line-height: @height;
       float: left;
       list-style: none;
       font-size: 14px;
-      color: #8492a6;
+      color: var(--tabs-item-color);
       margin-bottom: -1px;
       position: relative;
 
@@ -52,7 +52,7 @@
       }
 
       @when active {
-        color: var(--color-primary);
+        color: var(--tabs-active-color);
       }
 
       &:hover {
@@ -88,7 +88,7 @@
       .el-tabs__item {
         border: 1px solid transparent;
         transition: all .3s cubic-bezier(.645,.045,.355,1);
-              
+
         &.is-closable {
           &:hover {
             padding: * 9px;
@@ -99,13 +99,13 @@
           }
         }
         &.is-active {
-          border: 1px solid #d3dce6;
+          border: 1px solid var(--tabs-border-color);
           border-bottom-color: #fff;
           border-radius: 4px 4px 0 0;
 
           &.is-closable {
             padding: * 16px;
-            
+
             .el-icon-close {
               width: 14px;
             }
@@ -115,14 +115,14 @@
     }
     @m border-card {
       background: #fff;
-      border: 1px solid #d3dce6;
+      border: 1px solid var(--tabs-border-color);
       box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.12), 0px 0px 6px 0px rgba(0,0,0,0.04);
 
       .el-tabs__content {
         padding: 15px;
       }
       .el-tabs__header {
-        background-color: #eff2f7;
+        background-color: var(--tabs-header-fill);
         margin: 0;
       }
       .el-tabs__item {
@@ -133,14 +133,14 @@
 
         &.is-active {
           background-color: #fff;
-          border-right-color: #d3dce6;
-          border-left-color: #d3dce6;
+          border-right-color: var(--tabs-border-color);
+          border-left-color: var(--tabs-border-color);
 
           &:first-child {
-            border-left-color: #d3dce6;
+            border-left-color: var(--tabs-border-color);
           }
           &:last-child {
-            border-right-color: #d3dce6;
+            border-right-color: var(--tabs-border-color);
           }
         }
 

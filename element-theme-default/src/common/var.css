@@ -149,14 +149,14 @@
 
   /* Select
   -------------------------- */
-  --select-border-color-hover: var(--color-primary);
+  --select-border-color-hover: var(--color-info);
   --select-disabled-border: var(--disabled-border-base);
   --select-font-size: var(--font-size-base);
   --select-close-hover-color: var(--color-grey);
 
   --select-input-color: var(--color-grey);
   --select-multiple-input-color: #666;
-  --select-input-focus-background: var(--color-primary);
+  --select-input-focus-background: var(--color-info);
   --select-input-font-size: 12px;
 
   --select-tag-height: 20px;
@@ -267,7 +267,7 @@
   --input-placeholder-color: var(--color-grey);
   --input-max-width: 314px;
 
-  --input-hover-border: var(--border-color-hover);
+  --input-hover-border: var(--color-info);
 
   --input-focus-border: var(--color-primary);
   --input-focus-fill: var(--color-white);
@@ -413,8 +413,12 @@
   --dialog-large-width: 90%;
   --dialog-close-color: var(--color-grey);
   --dialog-close-hover-color: var(--color-primary);
-  --dialog-title-font-size: 16px;
-  --dialog-font-size: 14px;
+  --dialog-title-font-size: 14px;
+  --dialog-font-size: 12px;
+  --dialog-header-padding : 20px 20px 0;
+  --dialog-body-padding : 20px 20px 0;
+  --dialog-body-color : var(--font-color-base);
+  --dialog-title-color : #333;
 
   /* Table
  -------------------------- */
@@ -448,12 +452,12 @@
 
   /* Tooltip
   -------------------------- */
-  --tooltip-fill: #1f2d3d;
+  --tooltip-fill: rgba(64, 64, 64, 0.85);
   --tooltip-color: var(--color-white);
   --tooltip-font-size: 12px;
-  --tooltip-border-color: #1f2d3d;
+  --tooltip-border-color: rgba(64, 64, 64, 0.85);
   --tooltip-arrow-size: 6px;
-  --tooltip-padding: 10px;
+  --tooltip-padding: 8px 10px;
 
   /* Tag
   -------------------------- */
@@ -487,8 +491,12 @@
   /* Dropdown
   -------------------------- */
   --dropdown-menu-box-shadow: var(--box-shadow-dark);
-  --dropdown-menuItem-hover-fill: #e5e9f2;
-  --dropdown-menuItem-hover-color: var(--link-color);
+  --dropdown-menuItem-hover-fill: #e7f4fd;
+  --dropdown-menuItem-hover-color: var(--font-color-base);
+  --dropdown-disabled-color : var(--disabled-color-base);
+  --dropdown-divided-border-color : var(--disabled-color-base);
+  --dropdown-menu-padding : 0px;
+  --dropdown-menuItem-height : 32px;
 
   /* Badge
   -------------------------- */
@@ -524,6 +532,13 @@
   --steps-border-color: var(--disabled-border-base);
   --steps-border-radius: 4px;
   --steps-padding: 20px;
+  --steps-process-color: var(--disabled-border-base);
+  --steps-wait-color: var(--color-grey);
+  --steps-line-color: var(--color-grey);
+  --steps-line-distance: 30px;
+  --steps-size: 26px;
+  --steps-title-font: 13px;
+
 
   /* NavMenu
   --------------------------*/
@@ -532,14 +547,30 @@
   --menu-item-hover-fill: var(--disabled-border-base);
   --menu-item-height : 46px;
   --menu-active-color : var(--color-info);
-  --submenu-item-fill: #e5e9f2;
+  --menu-icon-arrow-color : var(--color-grey);
+  --submenu-hover-background : #e7f4fd;
+  --submenu-item-fill: var(--color-info);
+  --submenu-menu-fill : #fff;
+  --submenu-title-color: var(--color-info);
   --menu-border-color : var(--background-color-base);
   --menu-border-width : 1px;
   --menu-hover-border-width : 2px;
-  --dark-menu-item-color: var(--link-color);
+  --menu-hover-color : var(--color-info);
+  --dark-menu-item-color: var(--color-grey);
   --dark-menu-item-fill: #404040;
   --dark-menu-item-hover-fill: var(--link-color);
   --dark-submenu-item-fill: #333;
+
+
+  /* Tabs
+  --------------------------*/
+  --tabs-bar-height:2px;
+  --tabs-bar-fill:var(--color-info);
+  --tabs-item-color:var(--font-color-base);
+  --tabs-item-height : 36px;
+  --tabs-active-color : var(--color-info);
+  --tabs-header-fill:var(--background-color-base);
+  --tabs-border-color:var(--color-grey);
 
 
   /* Rate
@@ -568,4 +599,19 @@
   --------------------------*/
   --loading-spinner-size: 28px;
   --loading-fullscreen-spinner-size: 50px;
+
+  /* Breadcrumd
+  --------------------------*/
+   --breadcrumd-separator-color:var(--color-grey);
+   --breadcrumd-last-weight : bold;
+   --breadcrumd-last-color : var(--font-color-base);
+   --breadcrumd-item-color : var(--font-color-base);
+   --breadcrumd-item-size : 12px;
+
+   /* Form
+   --------------------------*/
+  --form-label-padding : 8px 12px 0;
+  --form-label-color : var(--font-color-base);
+  --form-label-size : 12px;
+  --form-item-margin-bottom : 18px;
 }

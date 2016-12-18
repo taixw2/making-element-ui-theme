@@ -25,7 +25,7 @@
       display: inline-block;
       position: absolute;
       border-color: inherit;
-      background-color: #c0ccda;
+      background-color: var(--steps-line-color);
 
       @when icon {
         @when horizontal {
@@ -36,14 +36,14 @@
       @when horizontal {
         top: 15px;
         height: 2px;
-        left: 32px;
+        left: var(--steps-line-distance);
         right: 0;
       }
 
       @when vertical {
         width: 2px;
         box-sizing: border-box;
-        top: 32px;
+        top: var(--steps-line-distance);
         bottom: 0;
         left: 15px;
       }
@@ -70,7 +70,7 @@
     }
 
     @e head {
-      circle: 28px transparent;
+      circle: var(--steps-size) transparent;
       text-align: center;
       line-height: 28px;
       font-size: 28px;
@@ -78,20 +78,20 @@
       transition: all 150ms;
 
       @when text {
-        font-size: 14px;
+        font-size: var(--steps-title-font);
         border-width: 2px;
         border-style: solid;
 
         @when process {
           color: #fff;
-          background-color: #c0ccda;
-          border-color: #c0ccda;
+          background-color: var(--steps-process-color);
+          border-color: var(--steps-process-color);
         }
 
         @when wait {
-          color: #c0ccda;
+          color: var(--steps-wait-color);
           background-color: #fff;
-          border-color: #c0ccda;
+          border-color: var(--steps-wait-color);
         }
 
         @when success {
@@ -146,7 +146,7 @@
     }
 
     @e title {
-      font-size: 14px;
+      font-size: var(--steps-title-font);
       line-height: 32px;
       display: inline-block;
 

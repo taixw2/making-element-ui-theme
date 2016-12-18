@@ -21,7 +21,7 @@
     position: relative;
     margin: 0;
     padding-left: 0;
-    border-bottom: var(--menu-border-width) solid var(--menu-border-color);
+    border-right: var(--menu-border-width) solid var(--menu-border-color);
     background-color: var(--menu-item-fill);
     @utils-clearfix;
 
@@ -32,24 +32,32 @@
     @m dark {
       background-color: var(--dark-menu-item-fill);
 
+
       & .el-menu-item,
       & .el-submenu__title {
-        color: #c0ccda;
+        color: var(--dark-menu-item-color);
 
         &:hover {
-          background-color: #475669;
+          color:var(--submenu-title-color);
+        }
+        &.is-active{
+          border-bottom: none;
         }
       }
 
       & .el-submenu .el-menu {
-        background-color: #1f2f3d;
+        background-color: var(--dark-submenu-item-fill);
+        border-right: none; 
 
         & .el-menu-item:hover {
-          background-color: #475669;
+          color:var(--submenu-title-color);
+          background: none;
         }
       }
     }
     @m horizontal {
+      border-bottom: var(--menu-border-width) solid var(--menu-border-color);
+      border-right: var(--menu-border-width) solid var(--menu-border-color);
       & .el-menu-item {
         float: left;
         height: var(--menu-item-height);
@@ -61,6 +69,7 @@
         border-bottom: 2px solid transparent;
 
         &:hover {
+                  color:var(--submenu-title-color);
           background-color: var(--menu-item-hover-fill);
         }
       }
@@ -73,7 +82,7 @@
           top: 65px;
           left: 0;
           border:1px solid #d3dce6;
-          padding: 5px 0;
+          /*padding: 5px 0;*/
           background-color: #fff;
           z-index: 100;
           min-width: 100%;
@@ -98,7 +107,7 @@
           position: static;
           vertical-align: middle;
           margin-left: 5px;
-          color: #99a9bf;
+          color: var(--menu-icon-arrow-color);
           margin-top: -3px;
         }
       }
@@ -109,7 +118,7 @@
       & > .el-menu-item:hover,
       & > .el-submenu:hover .el-submenu__title,
       & > .el-submenu.is-active .el-submenu__title {
-        border-bottom: var(--menu-hover-border-width) solid var(--color-primary);
+        border-bottom: var(--menu-hover-border-width) solid var(--menu-hover-color);
       }
 
       &.el-menu--dark {
@@ -124,12 +133,11 @@
             color: #475669;
 
             &:hover {
-              background-color: #d3dce6;
+              background-color: var(--submenu-hover-background);
             }
           }
           .el-menu-item.is-active {
             color: var(--menu-active-color);
-            border-bottom: var(--menu-hover-border-width) solid var(--color-primary);
           }
         }
       }
@@ -149,10 +157,13 @@
       margin-right: 0;
     }
     &:hover {
-      background-color: #d3dce6;
+      /*background-color: #d3dce6;*/
+      color: var(--submenu-title-color);
     }
     @when active {
-      color: var(--color-primary);
+      color: var(--menu-hover-color);
+      border-bottom: var(--menu-hover-border-width) solid var(--menu-hover-color);
+
     }
   }
 
@@ -162,11 +173,12 @@
       @extend menu-item;
 
       &:hover {
-        background-color: #d3dce6;
+        /*background-color: #fff;*/
+        color:var(--submenu-title-color);
       }
     }
     & .el-menu {
-      background-color: #e5e9f2;
+      background-color: var(--submenu-menu-fill);
     }
     & .el-menu-item {
       height: 50px;
@@ -174,7 +186,10 @@
       padding: 0 45px;
 
       &:hover {
-        background-color: #d3dce6;
+        background-color: var(--submenu-hover-background);
+      }
+      &.is-active {
+        border-bottom: none;
       }
     }
     @e icon-arrow {

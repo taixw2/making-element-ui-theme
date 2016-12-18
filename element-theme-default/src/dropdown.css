@@ -30,7 +30,7 @@
     background-color: #fff;
     border: 1px solid #D3DCE6;
     box-shadow: var(--dropdown-menu-box-shadow);
-    padding: 6px 0;
+    padding: var(--dropdown-menu-padding) 0;
     z-index: 10;
     position: absolute;
     top: 0;
@@ -39,7 +39,7 @@
 
     @e item {
       list-style: none;
-      line-height: 36px;
+      line-height: var(--dropdown-menuItem-height);
       padding: 0 10px;
       margin: 0;
       cursor: pointer;
@@ -51,7 +51,7 @@
       @m divided {
         position: relative;
         margin-top: 6px;
-        border-top: 1px solid #D3DCE6;
+        border-top: 1px solid var(--dropdown-divided-border-color);
 
         &:before {
           content: '';
@@ -63,7 +63,7 @@
       }
       @when disabled {
         cursor: default;
-        color: #c0ccda;
+        color: var(--dropdown-disabled-color);
         pointer-events: none;
       }
     }

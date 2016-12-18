@@ -24,7 +24,7 @@
     }
   }
   @b form-item {
-    margin-bottom: 22px;
+    margin-bottom: var(--form-item-margin-bottom);
     @utils-clearfix;
 
     & .el-form-item {
@@ -39,10 +39,10 @@
       text-align: right;
       vertical-align: middle;
       float: left;
-      font-size: 14px;
-      color: #5e6d82;
+      font-size: var(--form-label-size);
+      color: var(--form-label-color);
       line-height: 1;
-      padding: 11px 12px 11px 0;
+      padding: var(--form-label-padding);
       box-sizing: border-box;
     }
     @e content {

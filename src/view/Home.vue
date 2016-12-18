@@ -60,6 +60,29 @@
         <el-col :span="4" class="_col">
           <router-link to="navmenu">导航菜单 NavMenu</router-link>
         </el-col>
+        <el-col :span="4" class="_col">
+          <router-link to="tabs">标签页 Tabs</router-link>
+        </el-col>
+
+        <el-col :span="4" class="_col">
+          <router-link to="breadcrumb">面包屑导航 Breadcrumb</router-link>
+        </el-col>
+        <el-col :span="4" class="_col">
+          <router-link to="dropdown">下拉菜单 Dropdown</router-link>
+        </el-col>
+        <el-col :span="4" class="_col">
+          <router-link to="step">下拉菜单 Step</router-link>
+        </el-col>
+
+        <el-col :span="4" class="_col">
+          <router-link to="dialog">对话框 Dialog</router-link>
+        </el-col>
+        <el-col :span="4" class="_col">
+          <router-link to="form">表单 Form</router-link>
+        </el-col>
+        <el-col :span="4" class="_col">
+          <router-link to="tooltip">文字提示 Tooltip</router-link>
+        </el-col>
 
 
       </el-row>
@@ -72,11 +95,7 @@
 
 <style scoped>
 .wrp{
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
+
   width: 800px;
   margin:auto;
   /*height:80%;*/

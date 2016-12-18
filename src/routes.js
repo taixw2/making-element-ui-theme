@@ -87,8 +87,41 @@ module.exports = [
                 name: "NavMenu",
                 component: r("NavMenu")
             },
-
-
+            {
+                path: "tabs",
+                name: "Tabs",
+                component: r("Tabs")
+            },
+            {
+                path: "breadcrumb",
+                name: "Breadcrumb",
+                component: r("Breadcrumb")
+            },
+            {
+                path: "dropdown",
+                name: "Dropdown",
+                component: r("Dropdown")
+            },
+            {
+                path: "step",
+                name: "Step",
+                component: r("Step")
+            },
+            {
+                path: "dialog",
+                name: "Dialog",
+                component: r("Dialog")
+            },
+            {
+                path: "form",
+                name: "Form",
+                component: r("Form")
+            },
+            {
+                path: "tooltip",
+                name: "Tooltip",
+                component: r("Tooltip")
+            },
         ]
     }
 
