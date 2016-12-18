@@ -5,42 +5,24 @@
 对几乎所有组件的尺寸进行了缩小，以及对色彩线条阴影等进行了些许调整。
 
 
-主题可见 ：
-[https://taixw2.github.io/element-ui/index.html#/form](https://taixw2.github.io/element-ui/index.html#/form)
-## 引入该主题
-
-#### 安装
-``` bash
-npm install element-thin-ui --save
-```
-#### 引入
-``` bash
-require("element-thin-ui/index.css");
-#或者
-import "element-thin-ui/index.css";
-```
-
-
-## Start
+## 开始
 
 ``` bash
 git clone git@github.com:taixw2/make-element-ui-theme.git et
 cd et && npm install
 ```
 
-## Develop
+## 开发模式
 
 ``` bash
-# serve with hot reload at localhost:8080
 npm run dev
 
 # 这一步会使用webpack检测css的变动以及使用gulp输出编译后的css
-# 初次启动会提示 ./theme/index.css没有找到，
-# 等到 watch element theme 结束后再次刷新就OK了
+# 初次启动会提示 ./theme/index.css错误，可以忽略这个错误，因为此时gulp还没有编译编译完成，
 
 ```
 
-## Build
+## 生成
 
 ``` bash
 npm run build
@@ -55,3 +37,18 @@ improt ./dist/theme/index.css
   需要修改node_modules/element-theme/lib/config.js中的themePath的路径
 
 2. 或者直接修改node_modules/element-theme-default/中的样式文件
+
+
+## 主题预览 ：
+[https://taixw2.github.io/element-ui/index.html#/form](https://taixw2.github.io/element-ui/index.html#/form)
+## 引入该主题
+#### 安装
+``` bash
+npm install element-thin-ui --save
+```
+#### 引入
+``` bash
+require("element-thin-ui/index.css");
+#或者
+import "element-thin-ui/index.css";
+```
