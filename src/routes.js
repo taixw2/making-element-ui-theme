@@ -122,6 +122,11 @@ module.exports = [
                 name: "Tooltip",
                 component: r("Tooltip")
             },
+            {
+                path: "popconfirm",
+                name: "Popconfirm",
+                component: r("Popconfirm")
+            },
         ]
     }
 

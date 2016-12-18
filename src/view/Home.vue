@@ -83,8 +83,9 @@
         <el-col :span="4" class="_col">
           <router-link to="tooltip">文字提示 Tooltip</router-link>
         </el-col>
-
-
+        <el-col :span="4" class="_col">
+          <router-link to="popconfirm">弹出框 Popover</router-link>
+        </el-col>
       </el-row>
       <div class="_view">
         <router-view></router-view>
