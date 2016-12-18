@@ -84,7 +84,10 @@
           <router-link to="tooltip">文字提示 Tooltip</router-link>
         </el-col>
         <el-col :span="4" class="_col">
-          <router-link to="popconfirm">弹出框 Popover</router-link>
+          <router-link to="popconfirm">弹出框<br /> Popover</router-link>
+        </el-col>
+        <el-col :span="4" class="_col">
+          <router-link to="card">卡片 Card</router-link>
         </el-col>
       </el-row>
       <div class="_view">

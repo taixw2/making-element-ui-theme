@@ -357,7 +357,6 @@
   --button-ghost-color: #666;
   --button-ghost-fill: transparent;
   --button-ghost-border: none;
-
   --button-disabled-color: var(--color-grey);
   --button-disabled-fill: var(--background-color-base);
   --button-disabled-border: var(--disabled-border-base);
@@ -491,6 +490,7 @@
   /* Dropdown
   -------------------------- */
   --dropdown-menu-box-shadow: var(--box-shadow-dark);
+  --dropdown-border : none;
   --dropdown-menuItem-hover-fill: #e7f4fd;
   --dropdown-menuItem-hover-color: var(--font-color-base);
   --dropdown-disabled-color : var(--disabled-color-base);
@@ -509,8 +509,10 @@
   /* Card
   --------------------------*/
   --card-border-color: var(--disabled-border-base);
-  --card-border-radius: 4px;
+  --card-border-radius: 2px;
   --card-padding: 20px;
+  --car-box-shadow: none;
+  --car-header-padding : 10px 20px;
 
   /* Slider
   --------------------------*/

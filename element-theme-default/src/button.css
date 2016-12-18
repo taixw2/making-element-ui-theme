@@ -20,7 +20,7 @@
     & + .el-button {
       margin-left: 10px;
     }
-    
+
     @mixin button-size var(--button-padding-vertical), var(--button-padding-horizontal), var(--button-font-size), var(--button-border-radius);
 
     &:hover,
@@ -28,7 +28,7 @@
       color: var(--color-primary);
       border-color: @color;
     }
-    
+
     &:active {
       color: shade(var(--color-primary), var(--button-active-shade-percent));
       border-color: @color;
@@ -52,7 +52,7 @@
         border-color: var(--color-primary);
         color: var(--color-primary);
       }
-      
+
       &:active {
         background: #fff;
         border-color: shade(var(--color-primary), var(--button-active-shade-percent));
@@ -86,8 +86,8 @@
         &:hover,
         &:focus {
           background-color: #fff;
-          border-color: #d3dce6;
-          color: #C0CCDA;
+          border-color: var(--button-disabled-border);
+          color: var(--button-disabled-color);
         }
       }
     }

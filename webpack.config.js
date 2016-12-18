@@ -2,11 +2,12 @@ var path = require('path')
 var webpack = require('webpack')
 var et = require('./element-theme')
 
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        publicPath: '/dist/',
+        publicPath: './',
         filename: 'build.js'
     },
     performance: {
@@ -22,7 +23,7 @@ module.exports = {
             exclude: /node_modules/
         }, {
             test: /\.css$/,
-            loader: 'style-loader!css-loader'
+            loader: ExtractTextPlugin.extract({fallbackLoader:'style-loader',loader:'css-loader'})
         }, {
             test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
             loader: 'file-loader'
@@ -34,9 +35,12 @@ module.exports = {
             }
         }, {
             test: /\.scss$/,
-            loader: 'style-loader!css-loader!sass-loader'
+            loader: ExtractTextPlugin.extract({loader:'css-loader!sass-loader',fallbackLoader:'style-loader'})
         }]
     },
+    plugins : [
+      new ExtractTextPlugin("style.css")
+    ],
     devServer: {
         historyApiFallback: true,
         noInfo: true,
@@ -55,7 +59,6 @@ module.exports = {
 
 if (process.env.NODE_ENV === 'production') {
     module.exports.devtool = '#source-map'
-        // http://vue-loader.vuejs.org/en/workflow/production.html
     module.exports.plugins = (module.exports.plugins || []).concat([
         new webpack.DefinePlugin({
             'process.env': {
@@ -67,11 +70,12 @@ if (process.env.NODE_ENV === 'production') {
                 warnings: false
             }
         })
+
     ])
 
-    et.watch({
+    et.run({
         config: './element-variables.css',
-        out: './theme'
+        out: './dist/theme'
     })
 
 } else {

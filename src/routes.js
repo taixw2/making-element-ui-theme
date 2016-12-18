@@ -6,128 +6,134 @@ module.exports = [
 
     {
         path: "/",
-        redirect: "/home/button"
-    }, {
-        path: "/home",
-        name: "Index",
-        component: r("Home"),
-        children: [{
-                path: "button",
+        redirect: "/button",
+    },
+    //     path: "/home",
+    //     name: "Index",
+    //     component: r("Home"),
+        // children: [{
+        {
+                path: "/button",
                 name: "Button",
                 component: r("Button")
             }, {
-                path: "radio",
+                path: "/radio",
                 name: "Radio",
                 component: r("Radio")
             }, {
-                path: "input",
+                path: "/input",
                 name: "Input",
                 component: r("Input")
             }, {
-                path: "select",
+                path: "/select",
                 name: "Select",
                 component: r("Select")
             }, {
-                path: "switch",
+                path: "/switch",
                 name: "Switch",
                 component: r("Switch")
             }, {
-                path: "datepicker",
+                path: "/datepicker",
                 name: "DatePicker",
                 component: r("DatePicker")
             },
             {
-                path: "table",
+                path: "/table",
                 name: "Table",
                 component: r("Table")
             },
             {
-                path: "tag",
+                path: "/tag",
                 name: "Tag",
                 component: r("Tag")
             },
             {
-                path: "pagination",
+                path: "/pagination",
                 name: "Pagination",
                 component: r("Pagination")
             },
             {
-                path: "badge",
+                path: "/badge",
                 name: "Badge",
                 component: r("Badge")
             },
             {
-                path: "alert",
+                path: "/alert",
                 name: "Alert",
                 component: r("Alert")
             },
             {
-                path: "loading",
+                path: "/loading",
                 name: "Loading",
                 component: r("Loading")
             },
             {
-                path: "message",
+                path: "/message",
                 name: "Message",
                 component: r("Message")
             },
 
             {
-                path: "messagebox",
+                path: "/messagebox",
                 name: "MessageBox",
                 component: r("MessageBox")
             },
             {
-                path: "notification",
+                path: "/notification",
                 name: "Notification",
                 component: r("Notification")
             },
             {
-                path: "navmenu",
+                path: "/navmenu",
                 name: "NavMenu",
                 component: r("NavMenu")
             },
             {
-                path: "tabs",
+                path: "/tabs",
                 name: "Tabs",
                 component: r("Tabs")
             },
             {
-                path: "breadcrumb",
+                path: "/breadcrumb",
                 name: "Breadcrumb",
                 component: r("Breadcrumb")
             },
             {
-                path: "dropdown",
+                path: "/dropdown",
                 name: "Dropdown",
                 component: r("Dropdown")
             },
             {
-                path: "step",
+                path: "/step",
                 name: "Step",
                 component: r("Step")
             },
             {
-                path: "dialog",
+                path: "/dialog",
                 name: "Dialog",
                 component: r("Dialog")
             },
             {
-                path: "form",
+                path: "/form",
                 name: "Form",
                 component: r("Form")
             },
             {
-                path: "tooltip",
+                path: "/tooltip",
                 name: "Tooltip",
                 component: r("Tooltip")
             },
             {
-                path: "popconfirm",
+                path: "/popconfirm",
                 name: "Popconfirm",
                 component: r("Popconfirm")
             },
-        ]
-    }
+            {
+                path: "/card",
+                name: "Card",
+                component: r("Card")
+            }
+        // B
+    // }
 
 ]

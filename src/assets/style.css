@@ -1,14 +1,13 @@
-.block {
-    padding: 30px 24px;
-    border-bottom: 1px solid #eff2f6;
-}
 
-.block .wrapper {
-    float: right;
-    margin-right: 20px;
-}
 
 body {
+  background-color: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+  line-height: 1.5;
+  color: #666;
+  -webkit-transition: background 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  overflow-x: hidden;
     font-size: 13px;
 }
 
@@ -18,4 +17,14 @@ a {
 }
 a:hover {
     color:#40a5ed;
+}
+.block {
+    padding: 30px 24px;
+    border-bottom: 1px solid #eff2f6;
+        overflow: hidden;
+}
+
+.block .wrapper {
+    float: right;
+    margin-right: 20px;
 }
