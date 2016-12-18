@@ -1,0 +1,116 @@
+{
+  "_args": [
+    [
+      "element-theme@^0.2.0",
+      "/Users/mro/coding/making-element-ui"
+    ]
+  ],
+  "_from": "element-theme@>=0.2.0 <0.3.0",
+  "_id": "element-theme@0.2.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/element-theme",
+  "_nodeVersion": "5.8.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/element-theme-0.2.0.tgz_1478405420120_0.41263557970523834"
+  },
+  "_npmUser": {
+    "email": "cinwell.li@gmail.com",
+    "name": "qingwei.li"
+  },
+  "_npmVersion": "3.7.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "element-theme",
+    "raw": "element-theme@^0.2.0",
+    "rawSpec": "^0.2.0",
+    "scope": null,
+    "spec": ">=0.2.0 <0.3.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/element-theme/-/element-theme-0.2.0.tgz",
+  "_shasum": "3552e20f8eeec7b1c9318b8ad7847643b2ddb515",
+  "_shrinkwrap": null,
+  "_spec": "element-theme@^0.2.0",
+  "_where": "/Users/mro/coding/making-element-ui",
+  "author": {
+    "email": "cinwell.li@gmail.com",
+    "name": "qingwei-li",
+    "url": "https://github.com/QingWei-Li"
+  },
+  "bin": {
+    "element-theme": "./bin/element-theme",
+    "et": "./bin/element-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/ElementUI/element-theme/issues"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-nop": "0.0.3",
+    "gulp-postcss": "^6.2.0",
+    "ora": "^0.3.0",
+    "postcss-salad": "^1.0.5"
+  },
+  "description": "Theme generator cli tool for Element",
+  "devDependencies": {
+    "element-theme-default": "git+https://github.com/ElementUI/theme-default.git",
+    "xo": "^0.17.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "3552e20f8eeec7b1c9318b8ad7847643b2ddb515",
+    "tarball": "https://registry.npmjs.org/element-theme/-/element-theme-0.2.0.tgz"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "gitHead": "a2f090786ecf22cd3dc0a7811171cf59cb55ce97",
+  "homepage": "https://github.com/ElementUI/element-theme#readme",
+  "keywords": [
+    "element-ui",
+    "vue",
+    "theme",
+    "cli"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "cinwell.li@gmail.com",
+      "name": "qingwei.li"
+    }
+  ],
+  "name": "element-theme",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "element-theme-default": "*"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ElementUI/element-theme.git"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "version": "0.2.0",
+  "xo": {
+    "rule": {
+      "import/no-dynamic-require": 0,
+      "semi": 0,
+      "unicorn/no-process-exit": 0
+    },
+    "space": true
+  }
+}

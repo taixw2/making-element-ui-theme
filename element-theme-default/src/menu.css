@@ -52,8 +52,8 @@
     @m horizontal {
       & .el-menu-item {
         float: left;
-        height: 60px;
-        line-height: 60px;
+        height: var(--menu-item-height);
+        line-height: var(--menu-item-height);
         margin: 0;
         cursor: pointer;
         position: relative;
@@ -81,9 +81,9 @@
         }
 
         & .el-submenu__title {
-          height: 60px;
-          line-height: 60px;
-          border-bottom: 5px solid transparent;
+          height: var(--menu-item-height);
+          line-height: var(--menu-item-height);
+          border-bottom: var(--menu-hover-border-width) solid transparent;
         }
 
         & .el-menu-item {
@@ -128,7 +128,8 @@
             }
           }
           .el-menu-item.is-active {
-            color: var(--color-primary);
+            color: var(--menu-active-color);
+            border-bottom: var(--menu-hover-border-width) solid var(--color-primary);
           }
         }
       }

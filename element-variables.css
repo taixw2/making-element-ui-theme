@@ -530,15 +530,17 @@
   --menu-item-color: var(--font-color-base);
   --menu-item-fill: #fff;
   --menu-item-hover-fill: var(--disabled-border-base);
+  --menu-item-height : 46px;
+  --menu-active-color : var(--color-info);
   --submenu-item-fill: #e5e9f2;
   --menu-border-color : var(--background-color-base);
   --menu-border-width : 1px;
   --menu-hover-border-width : 2px;
-
   --dark-menu-item-color: var(--link-color);
-  --dark-menu-item-fill: #324057;
+  --dark-menu-item-fill: #404040;
   --dark-menu-item-hover-fill: var(--link-color);
-  --dark-submenu-item-fill: #1f2d3d;
+  --dark-submenu-item-fill: #333;
+
 
   /* Rate
   --------------------------*/

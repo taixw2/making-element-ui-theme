@@ -1,6 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
-var et = require('element-theme')
+var et = require('./element-theme')
 
 module.exports = {
     entry: './src/main.js',
