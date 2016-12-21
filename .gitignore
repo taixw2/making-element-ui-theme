@@ -3,4 +3,5 @@ node_modules/
 dist/
 npm-debug.log
 .idea
-~src/theme
+src/theme
+element-ui

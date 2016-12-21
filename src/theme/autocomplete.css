@@ -1,9 +1,4 @@
-.el-autocomplete__suggestions.is-loading li:after{
-    display: inline-block;
-    content: "";
-    height: 100%;
-    vertical-align: middle
-}@charset "UTF-8";
+@charset "UTF-8";
 @charset "UTF-8";
 :root{
     /* Transition
@@ -459,6 +454,13 @@
     line-height: 100px;
     font-size: 20px;
     color: #999
+}
+
+.el-autocomplete__suggestions.is-loading li:after{
+    display: inline-block;
+    content: "";
+    height: 100%;
+    vertical-align: middle
 }
 
 .el-autocomplete__suggestions.is-loading li:hover{

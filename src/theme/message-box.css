@@ -201,6 +201,7 @@
   -webkit-appearance: none;
   text-align: center;
   box-sizing: border-box;
+  position: relative;
   outline: none;
   margin: 0;
   -moz-user-select: none;

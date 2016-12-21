@@ -3,25 +3,19 @@ var webpack = require('webpack')
 var et = require('./element-theme')
 
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var htmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
     entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        publicPath: '/',
+        // publicPath: '/',     
         filename: 'build.js'
     },
     performance: {
         hints: false
     },
     resolve: {
-      extensions: ['.js', '.vue', '.json'],
-      // fallback: [path.join(__dirname, '../node_modules')],
-      // alias: {
-      //   'vue$': 'vue/dist/vue.common.js',
-      //   'src': path.resolve(__dirname, '../src'),
-      //   'assets': path.resolve(__dirname, '../src/assets'),
-      //   'components': path.resolve(__dirname, '../src/components')
-      // }
+        extensions: ['.js', '.vue', '.json']
     },
     module: {
         loaders: [{
@@ -30,10 +24,13 @@ module.exports = {
         }, {
             test: /\.js$/,
             loader: 'babel-loader',
-            exclude: /node_modules/
-        }, {
-            test: /\.css$/,
-            loader: "style-loader!css-loader"//ExtractTextPlugin.extract({fallbackLoader:'style-loader',loader:'css-loader'})
+            exclude: /node_modules/,
+            query : {
+              "presets": [
+                ["es2015", { "modules": false }]
+              ],
+              "plugins": ["transform-vue-jsx"]
+            }
         }, {
             test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
             loader: 'file-loader'
@@ -44,13 +41,19 @@ module.exports = {
                 name: '[name].[ext]?[hash]'
             }
         }, {
+            test: /\.css$/,
+            loader: "style-loader!css-loader" //ExtractTextPlugin.extract({fallbackLoader:'style-loader',loader:'css-loader'})
+        }, {
             test: /\.scss$/,
-            loader: "style-loader!css-loader!sass-loader"//ExtractTextPlugin.extract({loader:'css-loader!sass-loader',fallbackLoader:'style-loader'})
+            loader: "style-loader!css-loader!sass-loader" //ExtractTextPlugin.extract({loader:'css-loader!sass-loader',fallbackLoader:'style-loader'})
         }]
     },
-    // plugins : [
-    //   new ExtractTextPlugin("style.css")
-    // ],
+    plugins : [
+      new htmlWebpackPlugin({
+        filename : "index.html",
+        template : "index.html"
+      })
+    ],
     devServer: {
         historyApiFallback: true,
         noInfo: true,
@@ -79,9 +82,21 @@ if (process.env.NODE_ENV === 'production') {
             compress: {
                 warnings: false
             }
-        })
+        }),
+        new ExtractTextPlugin("style.css")
 
-    ])
+    ]);
+
+    module.exports.module.loaders.pop();
+    module.exports.module.loaders.pop();
+
+    module.exports.module.loaders.push({
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract({fallbackLoader:'style-loader',loader:'css-loader'})
+    }, {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract({loader:'css-loader!sass-loader',fallbackLoader:'style-loader'})
+    })
 
     et.run({
         config: './element-variables.css',

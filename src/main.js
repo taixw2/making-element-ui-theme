@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import ElementUI from '../element-ui/src'
+import ElementUI from 'element-ui'
 import './theme/index.css'
 import 'normalize.css'
 import App from './App.vue'

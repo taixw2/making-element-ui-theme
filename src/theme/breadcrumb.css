@@ -1,10 +1,4 @@
-.el-breadcrumb:before, .el-breadcrumb:after{
-    display: table;
-    content: ""
-}
-.el-breadcrumb:after{
-    clear: both
-}@charset "UTF-8";
+@charset "UTF-8";
 :root{
     /* Transition
   -------------------------- */
@@ -101,6 +95,15 @@
 .el-breadcrumb{
     font-size: 12px;
     line-height: 1
+}
+
+.el-breadcrumb:before, .el-breadcrumb:after{
+    display: table;
+    content: ""
+}
+
+.el-breadcrumb:after{
+    clear: both
 }
 
 .el-breadcrumb__separator{
