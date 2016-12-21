@@ -7,11 +7,21 @@ module.exports = {
     entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        publicPath: './',
+        publicPath: '/',
         filename: 'build.js'
     },
     performance: {
         hints: false
+    },
+    resolve: {
+      extensions: ['.js', '.vue', '.json'],
+      // fallback: [path.join(__dirname, '../node_modules')],
+      // alias: {
+      //   'vue$': 'vue/dist/vue.common.js',
+      //   'src': path.resolve(__dirname, '../src'),
+      //   'assets': path.resolve(__dirname, '../src/assets'),
+      //   'components': path.resolve(__dirname, '../src/components')
+      // }
     },
     module: {
         loaders: [{
@@ -23,7 +33,7 @@ module.exports = {
             exclude: /node_modules/
         }, {
             test: /\.css$/,
-            loader: ExtractTextPlugin.extract({fallbackLoader:'style-loader',loader:'css-loader'})
+            loader: "style-loader!css-loader"//ExtractTextPlugin.extract({fallbackLoader:'style-loader',loader:'css-loader'})
         }, {
             test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
             loader: 'file-loader'
@@ -35,12 +45,12 @@ module.exports = {
             }
         }, {
             test: /\.scss$/,
-            loader: ExtractTextPlugin.extract({loader:'css-loader!sass-loader',fallbackLoader:'style-loader'})
+            loader: "style-loader!css-loader!sass-loader"//ExtractTextPlugin.extract({loader:'css-loader!sass-loader',fallbackLoader:'style-loader'})
         }]
     },
-    plugins : [
-      new ExtractTextPlugin("style.css")
-    ],
+    // plugins : [
+    //   new ExtractTextPlugin("style.css")
+    // ],
     devServer: {
         historyApiFallback: true,
         noInfo: true,

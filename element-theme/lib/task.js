@@ -36,6 +36,8 @@ exports.build = function (opts) {
     .pipe((opts.minimize || config.minimize) ? cssmin({showLog: false}) : nop())
     .pipe(gulp.dest(opts.out || config.out))
     .on('end', function () {
+      console.log("success\n");
+      console.log(opts.out || config.out);
       spin.succeed()
     })
 

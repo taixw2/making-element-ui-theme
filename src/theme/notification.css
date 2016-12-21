@@ -1,0 +1,176 @@
+@charset "UTF-8";
+:root{
+    /* Transition
+  -------------------------- */
+    /* Colors drak
+  -------------------------- */
+    /* Colors tin
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Background color
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Fill
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Checkbox
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /* Select
+  -------------------------- */
+    /* Alert
+  -------------------------- */
+    /* Message Box
+  -------------------------- */
+    /* Message
+  -------------------------- */
+    /* Notification
+  -------------------------- */
+    /* Input
+  -------------------------- */
+    /* Cascader
+  -------------------------- */
+    /* Group
+  -------------------------- */
+    /* Tab
+  -------------------------- */
+    /* Button
+  -------------------------- */
+    /* cascader
+  -------------------------- */
+    /* Switch
+ -------------------------- */
+    /* Dialog
+ -------------------------- */
+    /* Table
+ -------------------------- */
+    /* Pagination
+ -------------------------- */
+    /* Popover
+ -------------------------- */
+    /* Tooltip
+  -------------------------- */
+    /* Tag
+  -------------------------- */
+    /* Dropdown
+  -------------------------- */
+    /* Badge
+  -------------------------- */
+    /* Card
+  --------------------------*/
+    /* Slider
+  --------------------------*/
+    /* Steps
+  --------------------------*/
+    /* NavMenu
+  --------------------------*/
+    /* Tabs
+  --------------------------*/
+    /* Rate
+  --------------------------*/
+    /* DatePicker
+  --------------------------*/
+    /* Loading
+  --------------------------*/
+    /* Breadcrumd
+  --------------------------*/
+    /* Form
+   --------------------------*/
+}
+
+.el-notification{
+    width: 310px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    position: fixed;
+    right: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    transition: opacity 0.3s, transform .3s, right .3s, top 0.4s;
+    overflow: hidden;
+}
+
+.el-notification .el-icon-circle-check{
+    color: #13ce66;
+}
+
+.el-notification .el-icon-circle-cross{
+    color: #ff4949;
+}
+
+.el-notification .el-icon-information{
+    color: #50bfff;
+}
+
+.el-notification .el-icon-warning{
+    color: #f7ba2a;
+}
+
+.el-notification__group{
+    margin-left: 0;
+}
+
+.el-notification__group span{
+    font-size: 14px;
+    color: #404040;
+}
+
+.el-notification__group p{
+    font-size: 12px;
+    line-height: 21px;
+    margin: 10px 0 0 0;
+    color: #8492a6;
+    text-align: justify;
+}
+
+.el-notification__group.is-with-icon{
+    margin-left: 40px;
+}
+
+.el-notification__icon{
+    width: 28px;
+    height: 28px;
+    font-size: 28px;
+    float: left;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    margin:auto 0;
+}
+
+.el-notification__closeBtn{
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    cursor: pointer;
+    color: #d9d9d9;
+    font-size: 12px;
+}
+
+.el-notification__closeBtn:hover{
+    color: #d9d9d9;
+}
+
+.el-notification-fade-enter {
+    transform: translateX(100%);
+    right: 0;
+}
+
+.el-notification-fade-leave-active {
+    opacity: 0;
+}

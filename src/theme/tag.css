@@ -1,0 +1,201 @@
+@charset "UTF-8";
+:root{
+    /* Transition
+  -------------------------- */
+    /* Colors drak
+  -------------------------- */
+    /* Colors tin
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Background color
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Fill
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Checkbox
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /* Select
+  -------------------------- */
+    /* Alert
+  -------------------------- */
+    /* Message Box
+  -------------------------- */
+    /* Message
+  -------------------------- */
+    /* Notification
+  -------------------------- */
+    /* Input
+  -------------------------- */
+    /* Cascader
+  -------------------------- */
+    /* Group
+  -------------------------- */
+    /* Tab
+  -------------------------- */
+    /* Button
+  -------------------------- */
+    /* cascader
+  -------------------------- */
+    /* Switch
+ -------------------------- */
+    /* Dialog
+ -------------------------- */
+    /* Table
+ -------------------------- */
+    /* Pagination
+ -------------------------- */
+    /* Popover
+ -------------------------- */
+    /* Tooltip
+  -------------------------- */
+    /* Tag
+  -------------------------- */
+    /* Dropdown
+  -------------------------- */
+    /* Badge
+  -------------------------- */
+    /* Card
+  --------------------------*/
+    /* Slider
+  --------------------------*/
+    /* Steps
+  --------------------------*/
+    /* NavMenu
+  --------------------------*/
+    /* Tabs
+  --------------------------*/
+    /* Rate
+  --------------------------*/
+    /* DatePicker
+  --------------------------*/
+    /* Loading
+  --------------------------*/
+    /* Breadcrumd
+  --------------------------*/
+    /* Form
+   --------------------------*/
+}
+
+.el-tag{
+    background-color: #f4f4f4;
+    display: inline-block;
+    padding: 0 5px;
+    height: 24px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #666;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid transparent
+}
+
+.el-tag .el-icon-close{
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    transform: scale(.75, .75);
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    top: -1px;
+    right: -2px
+}
+
+.el-tag .el-icon-close:hover{
+    background-color: #fff;
+    color: #f4f4f4
+}
+
+.el-tag--gray{
+    background-color: #d9d9d9;
+    border-color: #d9d9d9;
+    color: #fff
+}
+
+.el-tag--gray .el-tag__close:hover{
+    background-color: #fff;
+    color: #fff
+}
+
+.el-tag--gray.is-hit{
+    border-color: #fff
+}
+
+.el-tag--primary{
+    background-color: #20a0ff;
+    border-color: #20a0ff;
+    color: #fff
+}
+
+.el-tag--primary .el-tag__close:hover{
+    background-color: #fff;
+    color: #fff
+}
+
+.el-tag--primary.is-hit{
+    border-color: #fff
+}
+
+.el-tag--success{
+    background-color: #13ce66;
+    border-color: #13ce66;
+    color: #fff
+}
+
+.el-tag--success .el-tag__close:hover{
+    background-color: #fff;
+    color: #fff
+}
+
+.el-tag--success.is-hit{
+    border-color: #fff
+}
+
+.el-tag--warning{
+    background-color: #f7ba2a;
+    border-color: #f7ba2a;
+    color: #fff
+}
+
+.el-tag--warning .el-tag__close:hover{
+    background-color: #fff;
+    color: #fff
+}
+
+.el-tag--warning.is-hit{
+    border-color: #fff
+}
+
+.el-tag--danger{
+    background-color: #ff4949;
+    border-color: #ff4949;
+    color: #fff
+}
+
+.el-tag--danger .el-tag__close:hover{
+    background-color: #fff;
+    color: #fff
+}
+
+.el-tag--danger.is-hit{
+    border-color: #fff
+}

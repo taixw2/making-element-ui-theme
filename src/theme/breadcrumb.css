@@ -1,0 +1,137 @@
+.el-breadcrumb:before, .el-breadcrumb:after{
+    display: table;
+    content: ""
+}
+.el-breadcrumb:after{
+    clear: both
+}@charset "UTF-8";
+:root{
+    /* Transition
+  -------------------------- */
+    /* Colors drak
+  -------------------------- */
+    /* Colors tin
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Background color
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Fill
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Checkbox
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /* Select
+  -------------------------- */
+    /* Alert
+  -------------------------- */
+    /* Message Box
+  -------------------------- */
+    /* Message
+  -------------------------- */
+    /* Notification
+  -------------------------- */
+    /* Input
+  -------------------------- */
+    /* Cascader
+  -------------------------- */
+    /* Group
+  -------------------------- */
+    /* Tab
+  -------------------------- */
+    /* Button
+  -------------------------- */
+    /* cascader
+  -------------------------- */
+    /* Switch
+ -------------------------- */
+    /* Dialog
+ -------------------------- */
+    /* Table
+ -------------------------- */
+    /* Pagination
+ -------------------------- */
+    /* Popover
+ -------------------------- */
+    /* Tooltip
+  -------------------------- */
+    /* Tag
+  -------------------------- */
+    /* Dropdown
+  -------------------------- */
+    /* Badge
+  -------------------------- */
+    /* Card
+  --------------------------*/
+    /* Slider
+  --------------------------*/
+    /* Steps
+  --------------------------*/
+    /* NavMenu
+  --------------------------*/
+    /* Tabs
+  --------------------------*/
+    /* Rate
+  --------------------------*/
+    /* DatePicker
+  --------------------------*/
+    /* Loading
+  --------------------------*/
+    /* Breadcrumd
+  --------------------------*/
+    /* Form
+   --------------------------*/
+}
+
+.el-breadcrumb{
+    font-size: 12px;
+    line-height: 1
+}
+
+.el-breadcrumb__separator{
+    margin: 0 8px;
+    color: #d9d9d9
+}
+
+.el-breadcrumb__item{
+    float: left
+}
+
+.el-breadcrumb__item:last-child .el-breadcrumb__item__inner, .el-breadcrumb__item:last-child .el-breadcrumb__item__inner a{}
+
+.el-breadcrumb__item:last-child .el-breadcrumb__item__inner, .el-breadcrumb__item:last-child .el-breadcrumb__item__inner:hover, .el-breadcrumb__item:last-child .el-breadcrumb__item__inner a, .el-breadcrumb__item:last-child .el-breadcrumb__item__inner a:hover{
+    color: #666;
+    font-weight: 700;
+    cursor: text
+}
+
+.el-breadcrumb__item:last-child .el-breadcrumb__separator{
+    display: none
+}
+
+.el-breadcrumb__item__inner{}
+
+.el-breadcrumb__item__inner, .el-breadcrumb__item__inner a{
+    transition: color .15s linear;
+    color: #666
+}
+
+.el-breadcrumb__item__inner:hover, .el-breadcrumb__item__inner a:hover{
+    color: #20a0ff;
+    cursor: pointer
+}

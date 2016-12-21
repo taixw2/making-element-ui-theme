@@ -1,0 +1,135 @@
+@charset "UTF-8";
+:root{
+    /* Transition
+  -------------------------- */
+    /* Colors drak
+  -------------------------- */
+    /* Colors tin
+  -------------------------- */
+    /* Colors
+  -------------------------- */
+    /* Background color
+  -------------------------- */
+    /* Border
+  -------------------------- */
+    /* Box-shadow
+  -------------------------- */
+    /* Fill
+  -------------------------- */
+    /* Font
+  -------------------------- */
+    /* Size
+  -------------------------- */
+    /* z-index
+  -------------------------- */
+    /* Disable base
+  -------------------------- */
+    /* Icon
+  -------------------------- */
+    /* Checkbox
+  -------------------------- */
+    /* Radio
+  -------------------------- */
+    /* Select
+  -------------------------- */
+    /* Alert
+  -------------------------- */
+    /* Message Box
+  -------------------------- */
+    /* Message
+  -------------------------- */
+    /* Notification
+  -------------------------- */
+    /* Input
+  -------------------------- */
+    /* Cascader
+  -------------------------- */
+    /* Group
+  -------------------------- */
+    /* Tab
+  -------------------------- */
+    /* Button
+  -------------------------- */
+    /* cascader
+  -------------------------- */
+    /* Switch
+ -------------------------- */
+    /* Dialog
+ -------------------------- */
+    /* Table
+ -------------------------- */
+    /* Pagination
+ -------------------------- */
+    /* Popover
+ -------------------------- */
+    /* Tooltip
+  -------------------------- */
+    /* Tag
+  -------------------------- */
+    /* Dropdown
+  -------------------------- */
+    /* Badge
+  -------------------------- */
+    /* Card
+  --------------------------*/
+    /* Slider
+  --------------------------*/
+    /* Steps
+  --------------------------*/
+    /* NavMenu
+  --------------------------*/
+    /* Tabs
+  --------------------------*/
+    /* Rate
+  --------------------------*/
+    /* DatePicker
+  --------------------------*/
+    /* Loading
+  --------------------------*/
+    /* Breadcrumd
+  --------------------------*/
+    /* Form
+   --------------------------*/
+}
+
+.el-select-dropdown{}
+
+.el-select-dropdown__item{
+    font-size: 12px;
+    padding: 8px 10px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666;
+    height: 30px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    cursor: pointer
+}
+
+.el-select-dropdown__item.hover{
+    background-color: #f7f7f7
+}
+
+.el-select-dropdown__item.selected{
+    color: #fff;
+    background-color: #d9d9d9
+}
+
+.el-select-dropdown__item.selected.hover{
+    background-color: #d9d9d9
+}
+
+.el-select-dropdown__item span{
+    line-height: 1.5 !important
+}
+
+.el-select-dropdown__item.is-disabled{
+    color: #d9d9d9;
+    cursor: not-allowed
+}
+
+.el-select-dropdown__item.is-disabled:hover{
+    background-color: #fff
+}
