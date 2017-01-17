@@ -39,7 +39,7 @@
     }
 
     @e img {
-      size: 40px;
+      size: var(--message-image-size);
       position: absolute;
       left: 0;
       top: 0;

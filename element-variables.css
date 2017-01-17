@@ -214,7 +214,7 @@
   --msgbox-info-color: var(--color-info);
   --msgbox-warning-color: var(--color-warning);
   --msgbox-danger-color: var(--color-danger);
-
+  --message-image-size : 30px;
   /* Message
   -------------------------- */
   --message-shadow: var(--box-shadow-base);
